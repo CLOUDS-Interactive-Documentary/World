@@ -62,6 +62,8 @@
 		3DA45C6F179DB6C3002EC0AC /* wParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DA45C66179DB6C3002EC0AC /* wParticle.cpp */; };
 		3DA45C70179DB6C3002EC0AC /* wSatellite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DA45C68179DB6C3002EC0AC /* wSatellite.cpp */; };
 		3DA45C71179DB6C3002EC0AC /* wStar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DA45C6A179DB6C3002EC0AC /* wStar.cpp */; };
+		3DA460B7179E0B00002EC0AC /* CloudsRGBDCombinedRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DA460B2179E0B00002EC0AC /* CloudsRGBDCombinedRenderer.cpp */; };
+		3DA460B8179E0B00002EC0AC /* CloudsVisualSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DA460B4179E0B00002EC0AC /* CloudsVisualSystem.cpp */; };
 		3DEFE117176E7D8000139095 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFE110176E7D8000139095 /* tinyxml.cpp */; };
 		3DEFE118176E7D8000139095 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFE112176E7D8000139095 /* tinyxmlerror.cpp */; };
 		3DEFE119176E7D8000139095 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFE113176E7D8000139095 /* tinyxmlparser.cpp */; };
@@ -269,6 +271,11 @@
 		3DA45C69179DB6C3002EC0AC /* wSatellite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wSatellite.h; sourceTree = "<group>"; };
 		3DA45C6A179DB6C3002EC0AC /* wStar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wStar.cpp; sourceTree = "<group>"; };
 		3DA45C6B179DB6C3002EC0AC /* wStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wStar.h; sourceTree = "<group>"; };
+		3DA460B2179E0B00002EC0AC /* CloudsRGBDCombinedRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CloudsRGBDCombinedRenderer.cpp; sourceTree = "<group>"; };
+		3DA460B3179E0B00002EC0AC /* CloudsRGBDCombinedRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudsRGBDCombinedRenderer.h; sourceTree = "<group>"; };
+		3DA460B4179E0B00002EC0AC /* CloudsVisualSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CloudsVisualSystem.cpp; sourceTree = "<group>"; };
+		3DA460B5179E0B00002EC0AC /* CloudsVisualSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudsVisualSystem.h; sourceTree = "<group>"; };
+		3DA460B6179E0B00002EC0AC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		3DEFE110176E7D8000139095 /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml.cpp; sourceTree = "<group>"; };
 		3DEFE111176E7D8000139095 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml.h; sourceTree = "<group>"; };
 		3DEFE112176E7D8000139095 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlerror.cpp; sourceTree = "<group>"; };
@@ -813,6 +820,18 @@
 			path = vs_src;
 			sourceTree = SOURCE_ROOT;
 		};
+		3DA460B1179E0B00002EC0AC /* VisualSystemsLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				3DA460B2179E0B00002EC0AC /* CloudsRGBDCombinedRenderer.cpp */,
+				3DA460B3179E0B00002EC0AC /* CloudsRGBDCombinedRenderer.h */,
+				3DA460B4179E0B00002EC0AC /* CloudsVisualSystem.cpp */,
+				3DA460B5179E0B00002EC0AC /* CloudsVisualSystem.h */,
+				3DA460B6179E0B00002EC0AC /* README.md */,
+			);
+			path = VisualSystemsLibrary;
+			sourceTree = "<group>";
+		};
 		3DEFE10E176E7D8000139095 /* ofxXmlSettings */ = {
 			isa = PBXGroup;
 			children = (
@@ -1051,6 +1070,7 @@
 				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
 				E4B69E1C0A3A1BDC003C02F2 /* src */,
 				3DA45C5F179DB6C3002EC0AC /* vs_src */,
+				3DA460B1179E0B00002EC0AC /* VisualSystemsLibrary */,
 				E4EEC9E9138DF44700A80321 /* openFrameworks */,
 				BB4B014C10F69532006C3DED /* addons */,
 				E45BE5980E8CC70C009D7055 /* frameworks */,
@@ -1238,6 +1258,8 @@
 				3DA45C6F179DB6C3002EC0AC /* wParticle.cpp in Sources */,
 				3DA45C70179DB6C3002EC0AC /* wSatellite.cpp in Sources */,
 				3DA45C71179DB6C3002EC0AC /* wStar.cpp in Sources */,
+				3DA460B7179E0B00002EC0AC /* CloudsRGBDCombinedRenderer.cpp in Sources */,
+				3DA460B8179E0B00002EC0AC /* CloudsVisualSystem.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
