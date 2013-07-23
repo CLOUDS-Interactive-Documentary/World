@@ -1,0 +1,3 @@
+[submodule "VisualSystemsLibrary"]
+	path = VisualSystemsLibrary
+	url = https://github.com/CLOUDS-Interactive-Documentary/VisualSystemsLibrary
