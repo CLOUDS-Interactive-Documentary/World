@@ -269,15 +269,20 @@ void CloudsVisualSystemWorld::selfSetupRenderGui()
 
 void CloudsVisualSystemWorld::guiSystemEvent(ofxUIEventArgs &e)
 {
-    for(int i = satellites.size()-1; i >= 0; i--){
-        delete satellites[i];
-        satellites.erase(satellites.begin()+i);
-    }
     
-    for(int i = 0; i < nMaxSatellites; i++ ){
-        wSatellite *newSat = new wSatellite();
-        newSat->place(400, ofVec3f(ofRandom(-0.01,0.01),ofRandom(-0.05,0.05),0.0));
-        satellites.push_back( newSat );
+    string name = e.widget->getName();
+    
+    if ( name == "Satelites_ammount" ){
+        for(int i = satellites.size()-1; i >= 0; i--){
+            delete satellites[i];
+            satellites.erase(satellites.begin()+i);
+        }
+        
+        for(int i = 0; i < nMaxSatellites; i++ ){
+            wSatellite *newSat = new wSatellite();
+            newSat->place(400, ofVec3f(ofRandom(-0.01,0.01),ofRandom(-0.05,0.05),0.0));
+            satellites.push_back( newSat );
+        }
     }
 }
 
@@ -366,7 +371,7 @@ void CloudsVisualSystemWorld::selfUpdate()
         
         if ( arcs[i].doesDie() ){
             arcs.erase(arcs.begin()+i);
-        } else if ( arcs[i].doesArrive() && arcs[i].bActive ){
+        } else if ( arcs[i].doesArrive() && arcs[i].bActive && arcs.size() < arcsMax){
             arcs[i].bActive = false;
             
             wArc arc;

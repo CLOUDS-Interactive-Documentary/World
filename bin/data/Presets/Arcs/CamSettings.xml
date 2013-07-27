@@ -1,19 +1,19 @@
 <Canvas>
     <Kind>42</Kind>
     <Name>CamSettings</Name>
-    <IsMinified>1</IsMinified>
-    <XPosition>425.000061035</XPosition>
-    <YPosition>1.000000000</YPosition>
+    <IsMinified>0</IsMinified>
+    <XPosition>425.000000000</XPosition>
+    <YPosition>100.000000000</YPosition>
 </Canvas>
 <Widget>
     <Kind>4</Kind>
     <Name>DIST</Name>
-    <Value>241.379302979</Value>
+    <Value>157.635467529</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>FOV</Name>
-    <Value>60.000000000</Value>
+    <Value>61.182266235</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
@@ -23,12 +23,37 @@
 <Widget>
     <Kind>4</Kind>
     <Name>ROT-Y</Name>
-    <Value>0.000000000</Value>
+    <Value>33.985134125</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>ROT-Z</Name>
-    <Value>0.000000000</Value>
+    <Value>360.000000000</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>LOCK TO TRACK</Name>
+    <Value>0</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>2D</Name>
+    <Value>0</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>3D FLY THROUGH</Name>
+    <Value>1</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>3D WHIP PAN</Name>
+    <Value>0</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>3D RGBD</Name>
+    <Value>0</Value>
 </Widget>
 <Widget>
     <Kind>17</Kind>
