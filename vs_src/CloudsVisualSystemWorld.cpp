@@ -42,6 +42,8 @@ void CloudsVisualSystemWorld::selfSetup()
     satLinksDist = 0;
     satLinksAlpha = 1.0;
     
+//    ofSetSphereResolution(32);f
+    
     haloShader.load(getVisualSystemDataPath()+"shaders/backlight");
 }
 
