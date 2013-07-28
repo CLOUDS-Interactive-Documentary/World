@@ -61,7 +61,6 @@ void wArc::update(){
 }
 
 void wArc::draw(){
-    
     ofNoFill();
     ofBeginShape();
     for(int i = 0; i < tail.size(); i++){

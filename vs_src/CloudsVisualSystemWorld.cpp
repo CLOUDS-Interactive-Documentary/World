@@ -45,6 +45,9 @@ void CloudsVisualSystemWorld::selfSetup()
 //    ofSetSphereResolution(32);f
     
     haloShader.load(getVisualSystemDataPath()+"shaders/backlight");
+    
+    postShader.load("",getVisualSystemDataPath()+"shaders/postprocess.fs");
+    ofLoadImage(postTexture, getVisualSystemDataPath()+"images/7.jpg");
 }
 
 void CloudsVisualSystemWorld::selfBegin()
@@ -267,6 +270,10 @@ void CloudsVisualSystemWorld::selfSetupRenderGui()
     
     rdrGui->addLabel("Arcs");
     rdrGui->addSlider("Arcs_Alpha", 0.0, 1.0, &arcsAlpha);
+    
+    rdrGui->addLabel("Post-Process");
+    rdrGui->addSlider("Chroma_Distortion", -1.0, 1.0, &postChromaDist);
+    rdrGui->addSlider("Grain_Distortion", 0.0, 1.0, &postGrainDist);
 }
 
 void CloudsVisualSystemWorld::guiSystemEvent(ofxUIEventArgs &e)
@@ -470,6 +477,7 @@ void CloudsVisualSystemWorld::selfDraw()
         ofSetColor(255,255*arcsAlpha);
         arcs[i].draw();
     }
+    glPointSize(1.0);
     
     mat->end();
     
@@ -478,6 +486,7 @@ void CloudsVisualSystemWorld::selfDraw()
     
     //  STARS & CONSTELATIONS ( outside the pushMatrix )
     //
+    glPointSize(1.1);
     for(int i = 0; i < stars.size(); i++){
         if (stars[i]->constName == selectedConstelation && constelationRnd >= 1.0 ){
             stars[i]->constAlpha = ofLerp(stars[i]->constAlpha,constelationMax,0.01);
@@ -490,6 +499,17 @@ void CloudsVisualSystemWorld::selfDraw()
     glDisable(GL_NORMALIZE);
     glDisable(GL_DEPTH_TEST);
     
+}
+
+void CloudsVisualSystemWorld::selfPostDraw(){
+    postShader.begin();
+    postShader.setUniformTexture("tex1", postTexture, 1);
+    postShader.setUniform2f("resolution", ofGetWidth(), ofGetHeight());
+    postShader.setUniform2f("textureResolution", postTexture.getWidth(), postTexture.getHeight());
+    postShader.setUniform1f("chromaDist", postChromaDist);
+    postShader.setUniform1f("grainDist", postGrainDist);
+    CloudsVisualSystem::selfPostDraw();
+    postShader.end();
 }
 
 
