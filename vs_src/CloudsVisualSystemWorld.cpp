@@ -408,7 +408,7 @@ void CloudsVisualSystemWorld::selfDraw()
     
     //  Render globe
     //
-    mat->begin();
+//    mat->begin();
     
     //  SPHERE
     //  -------------------------------------
@@ -479,7 +479,7 @@ void CloudsVisualSystemWorld::selfDraw()
     }
     glPointSize(1.0);
     
-    mat->end();
+//    mat->end();
     
     ofPopStyle();
     ofPopMatrix();
