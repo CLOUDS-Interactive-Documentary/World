@@ -1,7 +1,7 @@
 <Canvas>
     <Kind>42</Kind>
     <Name>SystemSettings</Name>
-    <IsMinified>1</IsMinified>
+    <IsMinified>0</IsMinified>
     <XPosition>213.000000000</XPosition>
     <YPosition>1.000000000</YPosition>
 </Canvas>
@@ -23,7 +23,7 @@
 <Widget>
     <Kind>4</Kind>
     <Name>max_number</Name>
-    <Value>434.063171387</Value>
+    <Value>261.837585449</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
@@ -33,12 +33,12 @@
 <Widget>
     <Kind>4</Kind>
     <Name>density</Name>
-    <Value>0.842937946</Value>
+    <Value>0.669255197</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>gravity</Name>
-    <Value>0.843906879</Value>
+    <Value>0.868843913</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
@@ -53,7 +53,7 @@
 <Widget>
     <Kind>4</Kind>
     <Name>neigbordhood</Name>
-    <Value>287.936828613</Value>
+    <Value>55.521347046</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
