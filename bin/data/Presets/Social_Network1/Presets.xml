@@ -2,8 +2,8 @@
     <Kind>42</Kind>
     <Name>Presets</Name>
     <IsMinified>0</IsMinified>
-    <XPosition>1061.000000000</XPosition>
-    <YPosition>213.000000000</YPosition>
+    <XPosition>107.000000000</XPosition>
+    <YPosition>324.000000000</YPosition>
 </Canvas>
 <Widget>
     <Kind>2</Kind>
@@ -27,6 +27,16 @@
 </Widget>
 <Widget>
     <Kind>2</Kind>
+    <Name>Big Brother</Name>
+    <Value>0</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>Data_globe</Name>
+    <Value>0</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
     <Name>LifeIsNetworks</Name>
     <Value>0</Value>
 </Widget>
@@ -42,11 +52,11 @@
 </Widget>
 <Widget>
     <Kind>2</Kind>
-    <Name>SpaceJunk</Name>
+    <Name>Social_Network2</Name>
     <Value>0</Value>
 </Widget>
 <Widget>
     <Kind>2</Kind>
-    <Name>Social_Network2</Name>
+    <Name>SpaceJunk</Name>
     <Value>0</Value>
 </Widget>
